@@ -1,200 +1,236 @@
-<title>NextStep | Student Jobs & Volunteering</title>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>NextStep | Student Jobs & Volunteering</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 
 <body>
 
 <header class="topbar">
-  <div class="brand">NextStep 💼</div>
 
-  <nav class="nav-links" aria-label="Main navigation">
-    <button class="nav-btn active" data-page="home">Home</button>
-    <button class="nav-btn" data-page="jobs">Jobs</button>
-    <button class="nav-btn" data-page="volunteer">Volunteer</button>
+  <div class="brand">
+    NextStep 💼
+  </div>
+
+
+  <nav class="nav-links">
+
+    <button class="nav-btn active" data-page="home">
+      Home
+    </button>
+
+    <button class="nav-btn" data-page="jobs">
+      Jobs
+    </button>
+
+    <button class="nav-btn" data-page="volunteer">
+      Volunteer
+    </button>
+
   </nav>
-  
+
 </header>
+
+
 
 <main>
 
 
-<!-- HOME PAGE -->
 <section class="page active" id="home-page">
 
-  <div class="hero">
-    <h1>
-      Find Jobs & Volunteer Opportunities for High School Students
-    </h1>
 
-    <p>
-      Discover beginner-friendly opportunities, gain experience,
-      and track your volunteer impact.
-    </p>
+<div class="hero">
 
-    <input
-      id="search-input"
-      type="search"
-      placeholder="Search by title, tag, or keyword"
-    />
-  </div>
+<h1>
+Find Jobs & Volunteer Opportunities for High School Students
+</h1>
 
 
-  <section class="panel">
-
-    <h2>Browse Opportunities</h2>
-
-    <div class="filter-grid">
-
-      <select id="location-filter">
-        <option value="">All locations</option>
-      </select>
-
-      <select id="age-filter">
-        <option value="">All ages</option>
-        <option value="14">14+</option>
-        <option value="15">15+</option>
-        <option value="16">16+</option>
-      </select>
-
-
-      <select id="type-filter">
-        <option value="">All types</option>
-        <option value="job">Jobs</option>
-        <option value="volunteer">Volunteer</option>
-      </select>
-
-
-      <select id="tag-filter">
-        <option value="">All tags</option>
-      </select>
-
-    </div>
-
-
-    <div id="home-results" class="card-grid">
-
-
-      <!-- SAMPLE JOB CARD -->
-      <div class="card">
-        <h3>Retail Associate</h3>
-        <p>📍 Mississauga</p>
-        <p>Age Requirement: 16+</p>
-        <span>No experience needed</span>
-      </div>
-
-
-      <!-- SAMPLE VOLUNTEER CARD -->
-      <div class="card">
-        <h3>Community Centre Volunteer Helper</h3>
-        <p>📍 Mississauga</p>
-        <p>Volunteer Hours: 10</p>
-        <span>Community Service</span>
-      </div>
-
-
-    </div>
-
-  </section>
-
-</section>
-
-
-
-
-<!-- JOBS PAGE -->
-
-<section class="page" id="jobs-page">
-
-<section class="panel">
-
-<h2>Part-Time Jobs</h2>
-
-<p class="subtitle">
-Explore student-friendly jobs in your area.
+<p>
+Discover beginner-friendly opportunities, gain experience,
+and track your volunteer impact.
 </p>
 
 
-<div id="jobs-results" class="card-grid">
-
-<div class="card">
-<h3>Retail Associate</h3>
-<p>📍 Mississauga</p>
-<p>Age: 16+</p>
-<p>Tag: No experience needed</p>
-</div>
+<input
+id="search-input"
+type="search"
+placeholder="Search opportunities..."
+>
 
 
 </div>
 
-</section>
+
+
+<section class="panel">
+
+
+<h2>
+Browse Opportunities
+</h2>
+
+
+
+<div class="filter-grid">
+
+
+<select id="location-filter">
+
+<option value="">
+All Locations
+</option>
+
+</select>
+
+
+
+<select id="age-filter">
+
+<option value="">
+All Ages
+</option>
+
+<option value="14">
+14+
+</option>
+
+<option value="15">
+15+
+</option>
+
+<option value="16">
+16+
+</option>
+
+</select>
+
+
+
+
+<select id="type-filter">
+
+<option value="">
+All Types
+</option>
+
+<option value="job">
+Jobs
+</option>
+
+<option value="volunteer">
+Volunteer
+</option>
+
+</select>
+
+
+
+
+<select id="tag-filter">
+
+<option value="">
+All Tags
+</option>
+
+</select>
+
+
+
+</div>
+
+
+
+<div id="home-results" class="card-grid"></div>
+
 
 </section>
 
 
+</section>
 
 
 
 
-<!-- VOLUNTEER PAGE -->
+
+<section class="page" id="jobs-page">
+
+
+<section class="panel">
+
+<h2>
+Part-Time Jobs
+</h2>
+
+
+<p class="subtitle">
+Student-friendly jobs.
+</p>
+
+
+<div id="jobs-results" class="card-grid"></div>
+
+
+</section>
+
+
+</section>
+
+
+
+
+
+
 
 <section class="page" id="volunteer-page">
 
 
 <section class="panel">
 
-<h2>Volunteer Opportunities</h2>
+
+<h2>
+Volunteer Opportunities
+</h2>
+
 
 <p class="subtitle">
-Build skills and complete graduation requirements.
+Build skills and complete community hours.
 </p>
 
 
-<div id="volunteer-results" class="card-grid">
-
-
-<div class="card">
-<h3>Community Centre Helper</h3>
-<p>📍 Mississauga</p>
-<p>Hours Available: 10</p>
-</div>
-
-
-</div>
+<div id="volunteer-results" class="card-grid"></div>
 
 
 </section>
 
 
 
-<section class="panel tracker">
 
-<h2>Volunteer Hours Tracker</h2>
+<section class="panel">
+
+
+<h2>
+Volunteer Hours Tracker
+</h2>
+
 
 <p>
-Track your progress toward 40 community service hours.
+Track your progress toward 40 hours.
 </p>
-
-
-<div class="tracker-controls">
-
-<label for="hours-input">
-Completed hours
-</label>
 
 
 <input
 id="hours-input"
 type="number"
-min="0"
-step="0.5"
-placeholder="Example: 12.5"
-/>
+placeholder="Hours completed"
+>
 
 
 <button id="update-hours">
@@ -202,17 +238,16 @@ Update Progress
 </button>
 
 
-</div>
-
-
 
 <div class="progress-shell">
 
-<div id="hours-progress" class="progress-bar">
-
+<div
+id="hours-progress"
+class="progress-bar">
 </div>
 
 </div>
+
 
 
 <p id="hours-text">
@@ -220,7 +255,9 @@ Update Progress
 </p>
 
 
+
 </section>
+
 
 
 </section>
@@ -229,9 +266,10 @@ Update Progress
 </main>
 
 
-<script src="script.js"></script>
+
+<script src="script.js" defer></script>
+
 
 </body>
+
 </html>
-
-
